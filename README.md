@@ -27,7 +27,7 @@ Notre projet est un jeu qui se joue à 2 joueurs ou plusieurs. Le but du jeu est
 
 ```bash
 ### Clonez le dépôt
-git clone https://github.com/celiast05/CY-BER_Path.git
+git clone https://github.com/celiast05/CY-BER_Path.git backend
 
 ### Accédez au répertoire du projet
 cd CY-BER_Path
