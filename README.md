@@ -27,10 +27,10 @@ Notre projet est un jeu qui se joue à 2 joueurs ou plusieurs. Le but du jeu est
 
 ```bash
 ### Clonez le dépôt
-git clone https://github.com/votre-utilisateur/nom-du-projet.git
+git clone https://github.com/celiast05/CY-BER_Path.git
 
 ### Accédez au répertoire du projet
-cd nom-du-projet
+cd CY-BER_Path
 
 ### Compilez le projet
 make
@@ -40,14 +40,14 @@ make
 ## Guide d'utilisation 📋
 
 ### Exécuter le programme
-./nom-du-projet
+./CY-BER_Path
 
 ### Exemple d'utilisation
-./nom-du-projet argument1 argument2
+./CY-BER_Path argument1 argument2
 
 ## Structure du projet 
 
-nom-du-projet/
+CY-BER_Path/
 
 ├── src/            # Code source
 
