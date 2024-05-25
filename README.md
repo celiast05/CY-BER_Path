@@ -37,3 +37,51 @@ make
 ```
 
 ## Guide d'utilisation 📋
+
+```bash
+### Clonez le dépôt
+git clone https://github.com/votre-utilisateur/nom-du-projet.git
+
+### Accédez au répertoire du projet
+cd nom-du-projet
+
+### Compilez le projet
+make
+```
+
+## Guide d'utilisation 📋
+
+### Exécuter le programme
+./nom-du-projet
+
+### Exemple d'utilisation
+./nom-du-projet argument1 argument2
+
+## Structure du projet 
+
+nom-du-projet/
+
+├── src/            # Code source
+
+│   ├── main.c      # Point d'entrée du programme
+
+│   ├── module1.c   # Exemple de module
+
+│   └── module1.h   # Header pour module1
+
+
+├── include/        # Fichiers d'en-tête
+
+│   └── common.h    # Header commun
+
+├── Makefile        # Script de compilation
+
+└── README.md       # Ce fichier
+
+## Auteurs 👤  
+👤 ASTIER Célia
+
+👤 BIDI SINDA Grace
+
+👤 NJANKOU NANA Charmelle
+
