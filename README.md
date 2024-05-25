@@ -36,18 +36,6 @@ cd nom-du-projet
 make
 ```
 
-## Guide d'utilisation 📋
-
-```bash
-### Clonez le dépôt
-git clone https://github.com/votre-utilisateur/nom-du-projet.git
-
-### Accédez au répertoire du projet
-cd nom-du-projet
-
-### Compilez le projet
-make
-```
 
 ## Guide d'utilisation 📋
 
