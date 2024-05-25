@@ -27,7 +27,7 @@ Notre projet est un jeu qui se joue à 2 joueurs ou plusieurs. Le but du jeu est
 
 ```bash
 ### Clonez le dépôt
-git clone https://github.com/celiast05/CY-BER_Path.git backend
+git clone https://github.com/celiast05/CY-BER_Path.git 
 
 ### Accédez au répertoire du projet
 cd CY-BER_Path
@@ -53,14 +53,14 @@ CY-BER_Path/
 
 │   ├── main.c      # Point d'entrée du programme
 
-│   ├── module1.c   # Exemple de module
+│   ├── jeu.c   # Exemple de module
 
-│   └── module1.h   # Header pour module1
+│   └── test.h   # Header pour module1
 
 
 ├── include/        # Fichiers d'en-tête
 
-│   └── common.h    # Header commun
+│   └── header.h    # Header commun
 
 ├── Makefile        # Script de compilation
 
