@@ -59,6 +59,6 @@ void placerWall (Grid gridGame);
 Direction chooseDirection (char touche);
 void incrementationRobot (Grid gridGame, Coordinate robot, Direction mouvement);
 int actifPlayer (int *mouvement, int player);
-void chronometrerDeplacement(Grid gridGame, int difficultLevel, int player, int *mouvement);
+void  TimeDisplacement(Grid gridGame, int difficultLevel, int player, int *mouvement);
 
 #endif
