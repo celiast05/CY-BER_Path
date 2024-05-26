@@ -61,9 +61,9 @@ void placeTarget (Grid gridGame, Coordinate coord){
 ## Structure du projet 
 La structure de notre projet est la suivante :
 
-| CY-BER_Path/                             # Code source
+CY-BER_Path/                           
 
-| main.c                                   # Point d'entrée du programme
+| main.c                                   # Code source
 
 | game.c                                   # Exemple de module
 
