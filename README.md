@@ -36,16 +36,6 @@ cd CY-BER_Path
 make
 ```
 
-```
-	git clone https://gitlab.in2p3.fr/CTA-LAPP/COURS/TESTS/TestGitlabCI.git
-	cd TestGitlabCI
-	./install.sh
-```
-
-
-
-
-
 ## Guide d'utilisation 📋
 
 ### Exécuter le programme
