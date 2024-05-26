@@ -1,9 +1,9 @@
 all : exec
-creerGrille.o : creerGrille.c jeu.h
-  gcc -o creerGrille.o -c creerGrille.c
-test_grille.o : test_grille.c jeu.h
-  gcc -o test_grille.o -c main.c
-jeu.o : jeu.c jeu.h
-  gcc -o jeu.o -c jeu.c
-exec : test_grille.o jeu.o 
-  gcc test_grille.o jeu.o creerGrille.o exec
+createGrid.o : createGrid.c game.h
+  gcc -o createGrid.o -c createGrid.c
+test_grid.o : test_grid.c game.h
+  gcc -o test_grid.o -c main.c
+game.o : game.c game.h
+  gcc -o game.o -c game.c
+exec : test_grid.o game.o 
+  gcc test_grid.o game.o createGrid.o exec
