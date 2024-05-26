@@ -42,8 +42,7 @@ make
 ./CY-BER_Path
 
 ### Exemple d'utilisation
-
-####Notre procédure pour placer les cibles aléatoirement.
+Notre procédure pour placer les cibles aléatoirement.
 
 ```bash
 void placeTarget (Grid gridGame, Coordinate coord){
