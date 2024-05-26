@@ -42,7 +42,19 @@ make
 ./CY-BER_Path
 
 ### Exemple d'utilisation
-./CY-BER_Path argument1 argument2
+
+void placeTarget (Grid gridGame, Coordinate coord){
+    int createTarget = 0;
+    while (createTarget < 18){
+        coord = createCoordinate(rand() % gridGame.width, rand() % gridGame.height);
+        if (validePlacementTarget(gridGame, coord)){
+           gridGame.cases[coord.y][coord.x].type = TARGET;
+           gridGame.cases[coord.y][coord.x].id = 1 + createTarget;
+           createTarget++;
+        }
+    }
+}
+
 
 ## Structure du projet 
 
