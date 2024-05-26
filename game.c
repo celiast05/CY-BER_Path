@@ -167,3 +167,23 @@ int askDifficultLevel(){
     while (testLevel == 0 || level < 1 || level > 3);
     return level;
 }
+
+void copyGrid (Grid gridGame, Grid copy){
+    copy.height = gridGame.height;
+    copy.width = gridGame.width;
+    copy.cases = malloc(copy.height * sizeof(Case*));
+    if (copy.cases == NULL){
+        printf ("Erreur d'allocation");
+        exit (1);
+    }
+    for (int y = 0; y < copy.height; y++){
+        copy.cases[y] = malloc(copy.width * sizeof(Case));
+        if (copy.cases[y] == NULL){
+        printf ("Erreur d'allocation");
+        exit (2);
+        }
+        for (int x = 0; x < copy.width; x++){
+            copy.cases[y][x] = gridGame.cases[y][x];
+        }
+    }
+}
