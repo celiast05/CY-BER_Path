@@ -29,7 +29,7 @@ Grid createGridEmpty (int widht, int height){
             exit (2);
         }
 
-        for(int x=0; x<widht; x++){
+       for(int x=0; x<widht; x++){
             gridGame.cases[y][x] = createCase(EMPTY, -1, x == widht-1, y == height-1); // -1 car pas d'id 
         } 
     }
@@ -79,7 +79,7 @@ void displayGrid (Grid gridGame){
         printf("|");
 
         for (int x = 0; x < gridGame.width; x++){
-            afficherCase(gridGame.cases[y][x]);
+            displayCase(gridGame.cases[y][x]);
             if (gridGame.cases[y][x].wallRight && x != gridGame.width-1){
                 couleur("31");
                 printf("|");
@@ -134,13 +134,14 @@ bool validePlacementTarget(Grid gridGame, Coordinate target) {
     return true;
 }
 
-void placeTarget (Grid gridGame, Coordinate coord){
+void placeTarget (Grid gridGame, Coordinate targetCoord[]){
     int createTarget = 0;
     while (createTarget < 18){
-        coord = createCoordinate(rand() % gridGame.width, rand() % gridGame.height);
+        Coordinate coord = createCoordinate(rand() % gridGame.width, rand() % gridGame.height);
         if (validePlacementTarget(gridGame, coord)){
            gridGame.cases[coord.y][coord.x].type = TARGET;
            gridGame.cases[coord.y][coord.x].id = 1 + createTarget;
+           targetCoord[createTarget] = coord;
            createTarget++;
         }
     }
@@ -153,13 +154,14 @@ bool validePlacementRobot(Grid gridGame, Coordinate robot){
   return true;
 }
 
-void placeRobot(Grid gridGame, Coordinate coord){
+void placeRobot(Grid gridGame, Coordinate robotCoord[]){
     int createRobot = 0;
     while (createRobot < 4){
-        coord = createCoordinate(rand() % gridGame.width, rand() % gridGame.height);
-        if (placementValideRobot(gridGame, coord)){
+        Coordinate coord = createCoordinate(rand() % gridGame.width, rand() % gridGame.height);
+        if (validePlacementRobot(gridGame, coord)){
             gridGame.cases[coord.y][coord.x].type = ROBOT;
             gridGame.cases[coord.y][coord.x].id = 1 + createRobot;
+            robotCoord[createRobot] = coord;
             createRobot++;
         }
     }
@@ -227,5 +229,3 @@ void placeWall(Grid gridGame) {
     }
         
 }
-
- 
