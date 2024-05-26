@@ -67,11 +67,11 @@ La structure de notre projet est la suivante :
 
 | game.c                                   # Exemple de module
 
-  └── gcc –c createGrid.c -o createGrid.o  # Fichier d'en-tête
+   └── gcc –c createGrid.c -o createGrid.o  # Fichier d'en-tête
   
-  └── gcc –c test_grid.c -o test_grid.o
+   └── gcc –c test_grid.c -o test_grid.o
   
-  └── gcc –c game.c -o game.o
+   └── gcc –c game.c -o game.o
   
 | gcc createGrid.o test_grid.o game.c -o   # Exécution 
 
@@ -83,6 +83,7 @@ La structure de notre projet est la suivante :
 
 
 ## Auteurs 👤  
+
 👤 ASTIER Célia
 
 👤 BIDI SINDA Grace
