@@ -24,6 +24,7 @@ Notre projet est un jeu qui se joue à 2 joueurs ou plusieurs. Le but du jeu est
 - Make
 
 ## Guide d'installation 📔 
+https://github.com/celiast05/CY-BER_Path.git
 
 ```bash
 ### Clonez le dépôt
