@@ -61,16 +61,16 @@ void placeTarget (Grid gridGame, Coordinate coord){
 ## Structure du projet 
 La structure de notre projet est la suivante :
 
-| CY-BER_Path/                             # Code source
-| main.c                                   # Point d'entrée du programme
-| game.c                                   # Exemple de module
+- CY-BER_Path/                             # Code source
+- main.c                                   # Point d'entrée du programme
+- game.c                                   # Exemple de module
   └── gcc –c createGrid.c -o createGrid.o  # Fichier d'en-tête
   └── gcc –c test_grid.c -o test_grid.o
   └── gcc –c game.c -o game.o
-| gcc createGrid.o test_grid.o game.c -o   # Exécution 
-| game.h                                   # Header commun
-| Makefile                                 # Compilation
-| README.md                                # Ce fichier
+- gcc createGrid.o test_grid.o game.c -o   # Exécution 
+- game.h                                   # Header commun
+- Makefile                                 # Compilation
+- README.md                                # Ce fichier
 
 
 ## Auteurs 👤  
