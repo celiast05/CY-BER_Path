@@ -28,7 +28,7 @@ bool canMove (Grid gridGame, Coordinate coord, Direction direction){
         case EAST : 
           return ! getCase(gridGame, coord).wallRight;
     }
-    // si ne marche pas rajouter return true 
+    return true
 }
 
 char getDirection (){
