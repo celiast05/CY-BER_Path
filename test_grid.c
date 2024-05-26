@@ -10,7 +10,7 @@ int main(int argc, char const *argv[]) {
   int widht = rand() % (MAX - MIN + 1) + MIN;
   int height = rand() % (MAX - MIN + 1) + MIN;
   int nbPlayer, testPlayer, difficult, testDifficult, reflexion, testMovement, playerMin;
-  int nbHalf = 1;
+  int nbHalf = 0;
   int moveCount = 0;
   char input, testInput;
   Coordinate *robotCoord = malloc(4 * sizeof(Coordinate));
@@ -60,10 +60,9 @@ int main(int argc, char const *argv[]) {
   displayGrid(grid);
   copyGrid(grid, copy); 
   
-  printf("Manche %d/5\n", nbHalf);
-
   while (nbHalf < MAXHALF){
     nbHalf++;
+    printf("Manche %d/5\n", nbHalf);
     int robotAlea = rand() % 4;
     int targetAlea = rand() % 18;
     int idRobot = grid.cases[robotCoord[robotAlea].y][robotCoord[robotAlea].x].id;
