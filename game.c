@@ -76,7 +76,24 @@ int actifPlayer (int *mouvement, int player){
     return min;
 }
 
-void chronometrerDeplacement(Grid gridGame, int difficultLevel, int player, int *mouvement) {
+void mooveRobot(Grid grille, Coordinate robot, int mouvements) {
+    // Boucle pour effectuer chaque mouvement
+    for (int i = 0; i < mouvements; i++) {
+        // Afficher la grille après chaque mouvement
+        printf("Grille après le mouvement %d:\n", i + 1);
+        afficherGrille(grille);
+
+        // Demander à l'utilisateur de saisir la direction du mouvement
+        int direction;
+        printf("Entrez la direction du mouvement pour le robot (0: Nord, 1: Est, 2: Sud, 3: Ouest): ");
+        scanf("%d", &direction);
+
+        // Déplacer le robot dans la direction spécifiée
+        incrementationRobot(grille, robot, direction);
+    }
+}
+
+void timeDisplacement(Grid gridGame, int difficultLevel, int player, int *movement) {
     Coordinate robot;
     Coordinate target;
     bool foundRobot = false;
@@ -123,6 +140,30 @@ void chronometrerDeplacement(Grid gridGame, int difficultLevel, int player, int 
      
     for (int i = 0; i < player; i++) {
         printf("Joueur %d, entrez votre nombre de mouvements: ", i + 1);
-        scanf("%d", &mouvement[i]);
+        scanf("%d", &movement[i]);
+        mooveRobot(gridGame, robot, movement[i]);
+
     }
+}
+
+int askNbPlayer (){
+    int nbPlayer, testPlayer;
+    do {
+        printf ("Saisisser le nombre de joueurs :");
+        testPlayer = scanf ("%d", &nbPlayer);
+        vide_file();
+    }
+    while (nbPlayer < 2 || testPlayer == 0);
+    return nbPlayer;
+}
+
+int askDifficultLevel(){
+    int level, testLevel;
+    do{
+        printf ("Choisisser une niveau de difficulté (1: facile, 2: moyen, 3: difficile)");
+        testLevel = scanf("%d", &level);
+        vide_file();
+    }
+    while (testLevel == 0 || level < 1 || level > 3);
+    return level;
 }
