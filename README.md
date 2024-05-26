@@ -43,6 +43,7 @@ make
 
 ### Exemple d'utilisation
 
+```bash
 void placeTarget (Grid gridGame, Coordinate coord){
     int createTarget = 0;
     while (createTarget < 18){
@@ -54,7 +55,7 @@ void placeTarget (Grid gridGame, Coordinate coord){
         }
     }
 }
-
+```
 
 ## Structure du projet 
 
