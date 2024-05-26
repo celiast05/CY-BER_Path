@@ -43,6 +43,8 @@ make
 
 ### Exemple d'utilisation
 
+####Notre procédure pour placer les cibles aléatoirement.
+
 ```bash
 void placeTarget (Grid gridGame, Coordinate coord){
     int createTarget = 0;
