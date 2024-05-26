@@ -36,7 +36,7 @@ Grid createGridEmpty (int widht, int height){
     return gridGame;
 }
 
-Coordinate createCoordonee (int x, int y) {
+Coordinate createCoordinate (int x, int y) {
     Coordinate coord;
     coord.x = x;
     coord.y = y;
